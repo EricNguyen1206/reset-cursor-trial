@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reset App</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 20px;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Cursor Trial Reset Tool</h1>
+    <button id="resetButton">Reset</button>
+    <div id="loading" class="hidden">
+      <p>Resetting, please wait...</p>
+      <img width="50px" height="50px" src="./assets/loading.gif" alt="Loading" />
+    </div>
+    <div id="successMessage" class="hidden">
+      <p>Device IDs have been reset ✅ </p>
+      <button id="finishButton">Finish</button>
+    </div>
+    <script src="./renderer.js"></script>
+  </body>
+</html>
